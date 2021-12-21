@@ -1,6 +1,32 @@
 function isPalindrome(word) {
   // Write your algorithm here
+
+  //split word into array of strings
+  let letters = word.split('')
+
+  //flip the array of strings
+  let reverseWord = [...letters]
+  reverseWord = reverseWord.reverse()
+
+  //recreate word 
+  letters = letters.join('')
+
+  reverseWord = reverseWord.join('')
+
+  //compare to see if its the same word
+
+  return reverseWord === letters;
+
+
 }
+
+
+
+
+
+
+
+
 
 /* 
   Add your pseudocode here
